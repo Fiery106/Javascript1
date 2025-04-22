@@ -28,16 +28,54 @@
                     }
                 }
             }
+
+
+            function skriv_ut_fullnavn() {
+                let fornavn = document.getElementById("iFornavn").value
+                let middelnavn = document.getElementById("iMiddelnavn").value
+                let etternavn = document.getElementById("iEtternavn").value
+
+                document.getElementById("fullnavn").innerHTML = fornavn + " " + middelnavn + " " + etternavn;
+            }
         </script>
     </head>
 
 
 
     <body>
-        <button onclick="ask_for_name()">
-            Click me!
-        </button>
+        <div>
+            <button onclick="ask_for_name()">
+                Click me!
+            </button>
+    
+            <p id="demo"></p>
+        </div>
+        
 
-        <p id="demo"></p>
+        <div>
+            <label>
+                Fornavn
+            </label>
+            <input type="text" id="iFornavn"/>
+
+            <label>
+                Middelnavn
+            </label>
+            <input type="text" id="iMiddelnavn"/>
+
+            <label>
+                Etternavn
+            </label>
+            <input type="text" id="iEtternavn"/>
+
+            <button onclick="skriv_ut_fullnavn()">
+                Send
+            </button>
+        </div>
+
+
+        <div>
+            <p id="fullnavn"></p>
+        </div>
     </body>
 </html>
