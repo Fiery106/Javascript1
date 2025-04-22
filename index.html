@@ -16,12 +16,28 @@
             let sHungarianName = 'string'
 
             console.log(snake_case * camelCase)
+
+
+            function ask_for_name() {
+                let navn = prompt("Hva heter du?", "Per");
+                if (navn != null) {
+                    let farge = prompt("Hvilket farge liker du", "blå-farge");
+                    
+                    if (farge != null) {
+                        document.getElementById("demo").innerHTML = "Hei, " + navn + " liker du " + farge + " du?";
+                    }
+                }
+            }
         </script>
     </head>
 
 
 
     <body>
+        <button onclick="ask_for_name()">
+            Click me!
+        </button>
 
+        <p id="demo"></p>
     </body>
 </html>
