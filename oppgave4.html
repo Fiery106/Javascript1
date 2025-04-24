@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <title>
+            Tittle
+        </title>
+
+
+        <script>
+            const image = document.getElementById('bilde');
+
+
+            function set_image1() {
+                bilde.src = 'images/bilde1.jpg';
+            }
+
+            function set_image2() {
+                bilde.src = 'images/bilde2.jpg';
+            }
+
+            function set_image3() {
+                bilde.src = 'images/bilde3.jpg';
+            }
+        </script>
+    </head>
+
+
+
+    <body>
+        <h1>
+            Velg bilde
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet.
+        </p>
+
+
+        <div>
+            <button id="button1" onclick="set_image1()">
+                Bilde1
+            </button>
+            <button id="button2" onclick="set_image2()">
+                Bilde2
+            </button>
+            <button id="button3" onclick="set_image3()">
+                Bilde3
+            </button>
+        </div>
+
+
+        <img id="bilde" src=""/>
+    </body>
+</html>
