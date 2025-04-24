@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            ofpdaf afjdlaj
+        </title>
+
+
+        <script>
+            function writeInput() {
+                let tekst = document.getElementById("input1").value;
+                document.getElementById("demo").innerHTML = "du skrev: " + tekst;
+            }
+        </script>
+    </head>
+
+
+
+    <body>
+        <div>
+            <h1>
+                Skriv noe
+            </h1>
+            <p>
+                Oninput()
+            </p>
+
+            <input type="text" id="input1" oninput="writeInput()">
+        </div>
+
+
+        <div>
+            <p id="demo"></p>
+        </div>
+    </body>
+</html>
