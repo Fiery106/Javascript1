@@ -7,11 +7,6 @@
 
 
         <script>
-            let heading1 = document.getElementById('heading1');
-            let heading2 = document.getElementById('heading2');
-            let heading3 = document.getElementById('heading3');
-            let heading4 = document.getElementById('heading4');
-
             let red = 'red';
             let blue = 'blue';
             let yellow = 'yellow';
@@ -19,7 +14,16 @@
 
 
             function change_colors1() {
-                heading1.style.color = "red";
+                let heading1 = document.getElementById('heading1');
+                let heading2 = document.getElementById('heading2');
+                let heading3 = document.getElementById('heading3');
+                let heading4 = document.getElementById('heading4');
+
+                
+                heading1.style.color = red;
+                heading2.style.color = blue;
+                heading3.style.color = yellow;
+                heading4.style.color = green;
             }
         </script>
     </head>
